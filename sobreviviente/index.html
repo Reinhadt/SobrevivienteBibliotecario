@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Survivor</title>
+</head>
+<body>
+    <div class="main container">
+        <h1 class="center">Survivor</h1>
+        <form>
+            <input id="jugadores" type="text" placeholder="Jugadores" required>
+            <input id="turnos" type="text" placeholder="Turnos" required>
+            <button class="waves-effect waves-light btn" id="start">START</button>
+        </form>
+    
+        <section id="gameArea">
+            <button class="waves-effect waves-light btn" id="turnosBtn" >TOMAR TURNO</button>
+            <h5>Turnos restantes: <span id="turnosRestantes"></span></h5>
+            <h5>Lista de Jugadores <span id="jugadoresLista"></span></h5>
+        </section>
+        <section id="losers">
+            <div></div>
+        </section>
+    </div>
+    
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
